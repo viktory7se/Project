@@ -6,13 +6,15 @@
 [“Russia”, “Denmark”, “Kazan”] → []
 */
 
-string[] array = {"Hello", "world", "2", "32", "the", "dog", "Russia"};
+string[] array = {"Hello", "world", "2", "32", "the", "dog", "Russia", "1"};
 string [] result = new string[array.Length]; 
 int index = 0;
-for(int i = 0; i < array.Length - 1; i++) {
+for(int i = 0; i < array.Length; i++) {
     if(array[i].Length <= 3) {
         result[index++] = array[i];
     }
 }
-
-Console.WriteLine(string.Join(", ", result));
+//Вывод результата
+for(int i = 0; i < index; i++) {
+    Console.WriteLine(result[i]);
+}
