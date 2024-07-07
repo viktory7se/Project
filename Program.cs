@@ -15,3 +15,4 @@ for(int i = 0; i < array.Length - 1; i++) {
     }
 }
 
+Console.WriteLine(string.Join(", ", result));
